@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Management Minor — Sample Examination Paper</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    line-height: 1.65;
+    color: #1f2937;
+    background: #f5f5f0;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 40px 60px;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.08);
+    min-height: 100vh;
+  }
+
+  .exam-header {
+    text-align: center;
+    border-bottom: 3px double #1e3a8a;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  .exam-header h1 {
+    margin: 0 0 4px;
+    font-size: 1.55em;
+    color: #1e3a8a;
+    letter-spacing: 0.5px;
+  }
+  .exam-header .subtitle {
+    font-size: 0.95em;
+    color: #4b5563;
+    margin: 2px 0;
+  }
+  .exam-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 30px;
+    margin-top: 16px;
+    font-size: 0.95em;
+  }
+  .exam-meta div {
+    border-bottom: 1px dotted #94a3b8;
+    padding-bottom: 4px;
+  }
+  .exam-meta strong { color: #1e3a8a; }
+
+  .instructions {
+    background: #fffbeb;
+    border: 2px solid #ca8a04;
+    border-radius: 6px;
+    padding: 14px 20px;
+    margin: 20px 0 30px;
+    font-size: 0.93em;
+  }
+  .instructions h3 {
+    margin-top: 0;
+    color: #a16207;
+    font-size: 1em;
+    font-family: -apple-system, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .instructions ol {
+    margin: 6px 0 0 18px;
+    padding: 0;
+  }
+  .instructions li { margin: 3px 0; }
+
+  h2.section-heading {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 36px;
+    margin-bottom: 6px;
+    font-size: 1.15em;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: 0.5px;
+  }
+  .section-note {
+    font-style: italic;
+    color: #475569;
+    margin: 0 0 18px;
+    font-size: 0.92em;
+    padding-left: 4px;
+  }
+
+  .question {
+    margin: 16px 0 22px;
+    padding: 8px 0 0;
+  }
+  .qnum {
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-right: 6px;
+  }
+  .marks {
+    float: right;
+    font-weight: 700;
+    color: #b91c1c;
+    font-family: -apple-system, sans-serif;
+    font-size: 0.92em;
+    background: #fef2f2;
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+  .qtext { display: block; }
+  .qparts {
+    margin: 8px 0 0 28px;
+    padding: 0;
+    list-style: lower-alpha;
+  }
+  .qparts li { margin: 6px 0; }
+  .qparts.numbers { list-style: lower-roman; }
+
+  .caselet {
+    background: #f1f5f9;
+    border-left: 4px solid #2563eb;
+    padding: 14px 20px;
+    margin: 10px 0 14px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95em;
+    font-style: italic;
+    color: #1e293b;
+  }
+  .caselet strong { color: #1e3a8a; font-style: normal; }
+
+  .or-divider {
+    text-align: center;
+    margin: 16px 0;
+    font-weight: 700;
+    color: #b91c1c;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: 2px;
+  }
+  .or-divider::before, .or-divider::after {
+    content: "—";
+    margin: 0 14px;
+    color: #cbd5e1;
+  }
+
+  .footer-note {
+    margin-top: 50px;
+    padding-top: 14px;
+    border-top: 2px solid #cbd5e1;
+    text-align: center;
+    font-style: italic;
+    color: #6b7280;
+    font-size: 0.9em;
+  }
+
+  .marks-summary {
+    background: #eff6ff;
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+    padding: 10px 18px;
+    margin: 14px 0 24px;
+    font-size: 0.92em;
+  }
+  .marks-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0 0;
+  }
+  .marks-summary td, .marks-summary th {
+    padding: 5px 8px;
+    border-bottom: 1px dotted #cbd5e1;
+    text-align: left;
+    font-family: -apple-system, sans-serif;
+  }
+  .marks-summary th { color: #1e3a8a; }
+  .marks-summary tr:last-child td { border-bottom: none; font-weight: 700; }
+
+  details.hints {
+    margin-top: 50px;
+    background: #f0fdf4;
+    border: 2px dashed #16a34a;
+    padding: 16px 22px;
+    border-radius: 8px;
+  }
+  details.hints summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: #15803d;
+    font-family: -apple-system, sans-serif;
+    font-size: 1em;
+  }
+  details.hints h4 {
+    color: #166534;
+    margin-bottom: 4px;
+    margin-top: 18px;
+    font-family: -apple-system, sans-serif;
+  }
+  details.hints p, details.hints ul {
+    font-size: 0.92em;
+    margin: 4px 0;
+  }
+
+  .top-nav { background: #1e3a8a; color:#fff; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-family: -apple-system, sans-serif; font-size: 0.9em; display:flex; gap: 16px; flex-wrap:wrap; }
+  .top-nav a { color: #fff; text-decoration: none; opacity: 0.9; }
+  .top-nav a:hover { opacity: 1; text-decoration: underline; }
+  .top-nav .active { font-weight: 700; opacity: 1; border-bottom: 2px solid #fbbf24; }
+
+  @media print {
+    body { background: #fff; }
+    .container { box-shadow: none; padding: 20px; }
+    .marks { background: transparent; }
+    details.hints, .top-nav { display: none; }
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 16px 18px; }
+    .exam-meta { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <nav class="top-nav">
+    <a href="index.html">📒 Notes</a>
+    <a class="active">📝 Paper 1</a>
+    <a href="sample_paper_2.html">📝 Paper 2</a>
+    <a href="sample_paper_3.html">📝 Paper 3</a>
+  </nav>
+
+  <!-- =========================== HEADER =========================== -->
+  <div class="exam-header">
+    <h1>MARKETING MANAGEMENT — MINOR</h1>
+    <div class="subtitle">End-Semester Examination · Sample Question Paper</div>
+    <div class="subtitle">Academic Year 2025–2026, Semester 2</div>
+    <div class="exam-meta">
+      <div><strong>Date:</strong> Saturday, 23 May 2026</div>
+      <div><strong>Duration:</strong> 2 Hours</div>
+      <div><strong>Maximum Marks:</strong> 40</div>
+      <div><strong>Mode:</strong> Paper–Pen Based</div>
+    </div>
+  </div>
+
+  <!-- =========================== INSTRUCTIONS =========================== -->
+  <div class="instructions">
+    <h3>General Instructions</h3>
+    <ol>
+      <li>This paper has <strong>three sections — A, B and C</strong>. All sections are <strong>compulsory</strong>.</li>
+      <li><strong>Section A:</strong> 5 questions × 2 marks each. Short answers (3–5 lines).</li>
+      <li><strong>Section B:</strong> 3 questions × 4 marks each. Application-based answers (½ page each).</li>
+      <li><strong>Section C:</strong> 2 questions × 9 marks each. Case-based long answers (1 page each).</li>
+      <li>Carry at least <strong>two pens</strong>. Colours, pencil, eraser and scale are <em>permitted</em> for diagrams or matrices (not mandatory).</li>
+      <li><strong>Borrowing stationery from other students is NOT allowed.</strong></li>
+      <li>Use of frameworks (SWOT, BCG, Ansoff, AIDA, PESTEL, 4Ps, etc.) is <strong>encouraged</strong> where relevant — give labelled diagrams whenever applicable.</li>
+      <li>Cite <em>Indian or global examples</em> wherever appropriate.</li>
+      <li>Manage time wisely: ~25 min for A · ~35 min for B · ~50 min for C · 10 min revision.</li>
+    </ol>
+  </div>
+
+  <div class="marks-summary">
+    <table>
+      <tr><th>Section</th><th>Type</th><th>Questions</th><th>Marks each</th><th>Total</th></tr>
+      <tr><td>A</td><td>Concept</td><td>5</td><td>2</td><td>10</td></tr>
+      <tr><td>B</td><td>Application</td><td>3</td><td>4</td><td>12</td></tr>
+      <tr><td>C</td><td>Caselet</td><td>2</td><td>9</td><td>18</td></tr>
+      <tr><td colspan="4">GRAND TOTAL</td><td>40</td></tr>
+    </table>
+  </div>
+
+  <!-- =========================== SECTION A =========================== -->
+  <h2 class="section-heading">SECTION A — Concept Check (5 × 2 = 10 Marks)</h2>
+  <p class="section-note">Attempt <strong>all five</strong> questions. Keep answers crisp — 3 to 5 lines or a labelled diagram + 2 lines.</p>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q1.</span>
+    <span class="qtext">Differentiate between a <strong>Need, a Want and a Demand</strong>. Give one example each from the Indian context.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q2.</span>
+    <span class="qtext">Define <strong>STP</strong>. In one sentence each, state what Segmentation, Targeting and Positioning achieve for a marketer.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q3.</span>
+    <span class="qtext">List the <strong>4 characteristics of services</strong> (the 4 I's) and briefly explain any <em>one</em>.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q4.</span>
+    <span class="qtext">What is the difference between <strong>Penetration Pricing</strong> and <strong>Skimming Pricing</strong>? Name one Indian / global product that used each.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q5.</span>
+    <span class="qtext">Place the following four products in the correct quadrant of the <strong>BCG Matrix</strong> and justify each in one line:</span>
+    <ol class="qparts">
+      <li>Reliance Jio (today)</li>
+      <li>HDFC Savings Account</li>
+      <li>BSNL Landline</li>
+      <li>Tata Motors EV Division</li>
+    </ol>
+  </div>
+
+  <!-- =========================== SECTION B =========================== -->
+  <h2 class="section-heading">SECTION B — Application (3 × 4 = 12 Marks)</h2>
+  <p class="section-note">Attempt <strong>all three</strong> questions. Use frameworks &amp; real-world examples. Suggested length: ½ page each.</p>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q6.</span>
+    <span class="qtext">A new D2C startup is planning to launch a range of <strong>affordable, dermatology-backed skincare</strong> for young adults in Tier 1 &amp; Tier 2 Indian cities.</span>
+    <ol class="qparts">
+      <li>Identify <strong>three relevant segmentation bases</strong> they should use and explain why. <em>(2 marks)</em></li>
+      <li>Write a <strong>positioning statement</strong> using the format: "For [target], our brand is the [category] that [benefit] because [reason to believe]." <em>(2 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q7.</span>
+    <span class="qtext">Apply the <strong>PESTEL framework</strong> to analyse the <em>Indian Electric Vehicle (EV) industry</em>. Give at least <strong>one factor under each of the six PESTEL letters</strong> that impacts EV adoption in India.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q8.</span>
+    <span class="qtext">Map the following marketing tactics to the correct stage of the <strong>AIDA funnel</strong> and justify your mapping in 1 line each:</span>
+    <ol class="qparts numbers">
+      <li>Influencer unboxing video on Instagram</li>
+      <li>Limited-edition product drop with countdown timer</li>
+      <li>Free shipping at checkout</li>
+      <li>Detailed comparison blog ("X vs Y vs Z")</li>
+    </ol>
+  </div>
+
+  <!-- =========================== SECTION C =========================== -->
+  <h2 class="section-heading">SECTION C — Case-Based Application (2 × 9 = 18 Marks)</h2>
+  <p class="section-note">Attempt <strong>both</strong> caselets. Structure your answers with headings, frameworks and labelled diagrams where useful. Suggested length: ~1 page each.</p>
+
+  <!-- ============ CASELET 1 ============ -->
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q9.</span>
+    <span class="qtext"><strong>Caselet 1 — The "Hyper-Speed" Quick-Commerce War</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> Three players dominate India's quick-commerce category in 2026 — <strong>Zepto</strong> (10-minute delivery, dark-store first), <strong>Blinkit</strong> (owned by Zomato, leveraging restaurant relationships), and <strong>Instamart</strong> (Swiggy's vertical).<br><br>
+      Zepto is growing fast but burning ₹X crores monthly on every delivery. Blinkit has the financial cushion of Zomato. Instamart has the largest customer base but the slowest delivery times.<br><br>
+      A new Tier-2 city player, "<em>Apna Bazaar Express</em>", wants to enter the market with a differentiated strategy.
+    </div>
+    <ol class="qparts">
+      <li>Conduct a brief <strong>SWOT analysis for Zepto</strong> in this current scenario. <em>(2 marks)</em></li>
+      <li>Plot Zepto, Blinkit, and Instamart on the <strong>BCG Matrix</strong> with justification. Draw a labelled diagram. <em>(3 marks)</em></li>
+      <li>Recommend a <strong>differentiated 4Ps marketing mix</strong> for "Apna Bazaar Express" to compete in Tier-2 cities. <em>(4 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="or-divider">OR</div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q9 (Alt).</span>
+    <span class="qtext"><strong>Caselet 1 (Alternative) — Reviving a Fallen Brand</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> A mid-sized Indian café chain "<em>Café Mosaic</em>" charges premium prices comparable to Starbucks but suffers from average interiors, slow service, and weak repeat business. Their Instagram ads are bold and aspirational, but customer reviews on Zomato are mixed. Footfall has dropped 30% YoY.
+    </div>
+    <ol class="qparts">
+      <li>Diagnose <strong>which "P" of the marketing mix is the weakest</strong> and explain why. <em>(2 marks)</em></li>
+      <li>Suggest <strong>three concrete actions</strong> across the 4Ps to fix the misalignment. Justify each. <em>(4 marks)</em></li>
+      <li>Design a simple <strong>loyalty program</strong> appropriate for Café Mosaic's situation. Specify the program type, earning rule, and one personalisation feature. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <!-- ============ CASELET 2 ============ -->
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q10.</span>
+    <span class="qtext"><strong>Caselet 2 — The Streaming Subscription Dilemma</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> "<em>FlixCine</em>", a regional Indian OTT platform with strong content in Tamil, Telugu and Marathi, has 4 million subscribers but is losing customers to Netflix and Amazon Prime Video. The CMO is debating whether to:<br><br>
+      <strong>Option A:</strong> Cut subscription price by 40% to grow share aggressively (Penetration).<br>
+      <strong>Option B:</strong> Add new regional languages &amp; original content at the same price (Product Development).<br>
+      <strong>Option C:</strong> Launch a paid premium tier with 4K + early-access movies (Tiered).<br><br>
+      Churn data shows 60% of customers leave within 3 months because they "don't see enough new content".
+    </div>
+    <ol class="qparts">
+      <li>Apply the <strong>Ansoff Matrix</strong> to place each of the three options (A, B, C) into the correct quadrant. Justify in one line each. <em>(3 marks)</em></li>
+      <li>Which option would <strong>you recommend</strong> and why? Use insights from the churn data and pricing-strategy concepts. <em>(3 marks)</em></li>
+      <li>FlixCine wants to retain customers using a <strong>loyalty + IMC</strong> approach. Suggest:
+        <ol class="qparts numbers">
+          <li>One loyalty program design (type + key benefit), and</li>
+          <li>Two consistent IMC touchpoints (e.g. ad, app, email) that reinforce the same message.
+        </ol>
+        <em>(3 marks)</em>
+      </li>
+    </ol>
+  </div>
+
+  <div class="or-divider">OR</div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q10 (Alt).</span>
+    <span class="qtext"><strong>Caselet 2 (Alternative) — Distribution Crisis at "Crunchy"</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> "<em>Crunchy Snacks</em>" is a popular Indian FMCG brand of healthy baked chips. It sells through three channels: (1) Kirana stores (40% of sales), (2) Modern retail like BigBasket &amp; Reliance Smart (35%), and (3) D2C via its own website (25%).<br><br>
+      Recently:
+      <ul style="margin: 6px 0 0 20px;">
+        <li>Modern retailers are demanding 15% higher margins or threatening to delist Crunchy.</li>
+        <li>Kirana stores complain that the company's website sells the same pack at a 20% discount, hurting their walk-ins.</li>
+        <li>The CEO is considering exiting one channel to simplify operations.</li>
+      </ul>
+    </div>
+    <ol class="qparts">
+      <li>Identify the <strong>type(s) of channel conflict</strong> visible in this case and explain each. <em>(3 marks)</em></li>
+      <li>Apply <strong>Porter's 5 Forces</strong> or any other relevant framework to analyse the bargaining power dynamics at play. <em>(3 marks)</em></li>
+      <li>As the marketing head, recommend a <strong>channel strategy</strong> (with at least three concrete actions) that resolves the conflict without exiting any channel. Justify each. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <!-- =========================== FOOTER =========================== -->
+  <div class="footer-note">
+    — End of Sample Paper —<br>
+    "Wrong STP kills even famous brands. Strategy first, execution next."
+  </div>
+
+  <!-- =========================== HINTS / ANSWER SKELETON =========================== -->
+  <details class="hints">
+    <summary>📘 Click to reveal — Suggested Answer Skeletons &amp; Marking Hints (for self-evaluation)</summary>
+
+    <h4>Section A — Concept Answers</h4>
+    <p><strong>Q1.</strong> Need (basic — water), Want (specific — Bisleri), Demand (want + ability to pay — buying a 1L Bisleri for ₹20). Show all 3 + 1 example each = 2 marks.</p>
+    <p><strong>Q2.</strong> STP = Segmentation, Targeting, Positioning. "Segmentation divides, Targeting chooses, Positioning owns the mind."</p>
+    <p><strong>Q3.</strong> 4 I's = Intangibility, Inseparability, Perishability, Variability. Pick one and define properly.</p>
+    <p><strong>Q4.</strong> Penetration = low price for fast adoption (Jio). Skimming = high initial price for early adopters then reduce (iPhone).</p>
+    <p><strong>Q5.</strong> Jio = Cash Cow (mature, high share) · HDFC Savings = Cash Cow · BSNL Landline = Dog · Tata Motors EV = Question Mark / Star (depending on framing).</p>
+
+    <h4>Section B — Application Answers</h4>
+    <p><strong>Q6.</strong> (a) Demographic (18–25 yrs young adults), Psychographic (health-conscious, skincare-aware), Geographic (Tier 1 + Tier 2 metros), Behavioral (skincare routine users). Pick 3. (b) Positioning template — e.g. "For young adults aged 18–25 in metros, our brand is the affordable skincare line that is dermatology-backed and toxin-free, because every product is clinically tested and recommended by certified dermatologists."</p>
+    <p><strong>Q7.</strong> PESTEL for EV India — Political (FAME-II subsidies), Economic (battery costs falling, fuel inflation), Social (climate awareness in urban youth), Technological (improving battery tech, charging infrastructure), Environmental (pollution concerns, climate goals), Legal (BS-VI norms, EV policies of states).</p>
+    <p><strong>Q8.</strong> Influencer unboxing → Interest (and Desire). Limited-edition drop → Desire (scarcity). Free shipping → Action (removes friction). Comparison blog → Interest/Desire (informs evaluation).</p>
+
+    <h4>Section C — Caselet Skeletons</h4>
+    <p><strong>Q9 (Quick-commerce):</strong>
+      <ul>
+        <li>SWOT for Zepto — S: speed/focus, W: high burn rate, O: Gen-Z instant gratification, T: Blinkit's deeper pockets.</li>
+        <li>BCG — Zepto = Star (high growth, growing share), Blinkit = Star, Instamart = Question Mark (large base but slower).</li>
+        <li>"Apna Bazaar Express" 4Ps — Product (curated local SKUs, regional brands), Price (slightly higher than kirana but lower than Blinkit, no surge), Place (hub-and-spoke micro-warehouses in Tier-2), Promotion (regional language ads, WhatsApp ordering, local influencer marketing).</li>
+      </ul>
+    </p>
+    <p><strong>Q9 (Alt — Café Mosaic):</strong> Weakest P = Product (slow service, average interiors) — but argument can also be made for Place/People. Fixes: improve interiors + staff training (Product), introduce mid-tier pricing for repeat customers (Price), launch app-based ordering + delivery (Place), refresh promotion to feature actual store ambience not just stock photos. Loyalty: Tiered (Silver/Gold) with free upgrade every 5th visit.</p>
+    <p><strong>Q10 (FlixCine):</strong>
+      <ul>
+        <li>Ansoff — A = Market Penetration, B = Product Development, C = Product Development (premium tier — same market, new variant).</li>
+        <li>Recommend B — churn is driven by content shortage, not price. Cutting price (A) would hurt margins without solving the real issue. Premium tier (C) is too early before fixing the base offering.</li>
+        <li>Loyalty: Tiered ("FlixGold") with early access + offline meet-ups. IMC touchpoints: WhatsApp content alerts + in-app personalised "Made for You" rail + regional language emails — all carrying the same "Stories made in your language" message.</li>
+      </ul>
+    </p>
+    <p><strong>Q10 (Alt — Crunchy):</strong>
+      <ul>
+        <li>Vertical conflict — between Crunchy and modern retailers over margins. Multichannel conflict — between Crunchy's D2C site (lower price) and kirana stores.</li>
+        <li>Porter's 5 Forces — buyer power (retailers) very high due to consolidation in modern retail. Channel substitutes (D2C) increasing buyer threat to retailers.</li>
+        <li>Recommendations — (1) Maintain consistent MRP across all channels; offer modern retail loyalty bonuses tied to volume rather than higher margin per unit. (2) Differentiate D2C SKUs (bundles, subscriptions) so they don't directly compete with kirana packs. (3) Co-op marketing fund for kirana stores (POS displays, joint promotions).</li>
+      </ul>
+    </p>
+
+    <h4>General Marking Notes</h4>
+    <ul>
+      <li>Frameworks correctly drawn + labelled = full marks even without lengthy text.</li>
+      <li>Real-world examples (Indian preferred) always add value.</li>
+      <li>Caselets reward <em>structured thinking</em> &gt; lengthy prose. Use headings.</li>
+      <li>Avoid bookish definitions in application sections — show application.</li>
+    </ul>
+  </details>
+
+</div>
+
+</body>
+</html>

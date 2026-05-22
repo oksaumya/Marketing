@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Management Minor — Sample Paper 2</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    line-height: 1.65;
+    color: #1f2937;
+    background: #f5f5f0;
+    margin: 0;
+    padding: 0;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 40px 60px; background: #fff; box-shadow: 0 0 30px rgba(0,0,0,0.08); min-height: 100vh; }
+  .top-nav { background: #1e3a8a; color:#fff; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-family: -apple-system, sans-serif; font-size: 0.9em; display:flex; gap: 16px; flex-wrap:wrap; }
+  .top-nav a { color: #fff; text-decoration: none; opacity: 0.9; }
+  .top-nav a:hover { opacity: 1; text-decoration: underline; }
+  .top-nav .active { font-weight: 700; opacity: 1; border-bottom: 2px solid #fbbf24; }
+  .exam-header { text-align: center; border-bottom: 3px double #1e3a8a; padding-bottom: 18px; margin-bottom: 24px; }
+  .exam-header h1 { margin: 0 0 4px; font-size: 1.55em; color: #1e3a8a; letter-spacing: 0.5px; }
+  .exam-header .subtitle { font-size: 0.95em; color: #4b5563; margin: 2px 0; }
+  .exam-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; margin-top: 16px; font-size: 0.95em; }
+  .exam-meta div { border-bottom: 1px dotted #94a3b8; padding-bottom: 4px; }
+  .exam-meta strong { color: #1e3a8a; }
+  .instructions { background: #fffbeb; border: 2px solid #ca8a04; border-radius: 6px; padding: 14px 20px; margin: 20px 0 30px; font-size: 0.93em; }
+  .instructions h3 { margin-top: 0; color: #a16207; font-size: 1em; font-family: -apple-system, sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+  .instructions ol { margin: 6px 0 0 18px; padding: 0; }
+  .instructions li { margin: 3px 0; }
+  h2.section-heading { background: #1e3a8a; color: #fff; padding: 10px 20px; border-radius: 4px; margin-top: 36px; margin-bottom: 6px; font-size: 1.15em; font-family: -apple-system, sans-serif; letter-spacing: 0.5px; }
+  .section-note { font-style: italic; color: #475569; margin: 0 0 18px; font-size: 0.92em; padding-left: 4px; }
+  .question { margin: 16px 0 22px; padding: 8px 0 0; }
+  .qnum { font-weight: 700; color: #1e3a8a; margin-right: 6px; }
+  .marks { float: right; font-weight: 700; color: #b91c1c; font-family: -apple-system, sans-serif; font-size: 0.92em; background: #fef2f2; padding: 2px 10px; border-radius: 10px; }
+  .qtext { display: block; }
+  .qparts { margin: 8px 0 0 28px; padding: 0; list-style: lower-alpha; }
+  .qparts li { margin: 6px 0; }
+  .qparts.numbers { list-style: lower-roman; }
+  .caselet { background: #f1f5f9; border-left: 4px solid #2563eb; padding: 14px 20px; margin: 10px 0 14px; border-radius: 0 6px 6px 0; font-size: 0.95em; font-style: italic; color: #1e293b; }
+  .caselet strong { color: #1e3a8a; font-style: normal; }
+  .or-divider { text-align: center; margin: 16px 0; font-weight: 700; color: #b91c1c; font-family: -apple-system, sans-serif; letter-spacing: 2px; }
+  .or-divider::before, .or-divider::after { content: "—"; margin: 0 14px; color: #cbd5e1; }
+  .footer-note { margin-top: 50px; padding-top: 14px; border-top: 2px solid #cbd5e1; text-align: center; font-style: italic; color: #6b7280; font-size: 0.9em; }
+  .marks-summary { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 6px; padding: 10px 18px; margin: 14px 0 24px; font-size: 0.92em; }
+  .marks-summary table { width: 100%; border-collapse: collapse; margin: 6px 0 0; }
+  .marks-summary td, .marks-summary th { padding: 5px 8px; border-bottom: 1px dotted #cbd5e1; text-align: left; font-family: -apple-system, sans-serif; }
+  .marks-summary th { color: #1e3a8a; }
+  .marks-summary tr:last-child td { border-bottom: none; font-weight: 700; }
+  details.hints { margin-top: 50px; background: #f0fdf4; border: 2px dashed #16a34a; padding: 16px 22px; border-radius: 8px; }
+  details.hints summary { cursor: pointer; font-weight: 700; color: #15803d; font-family: -apple-system, sans-serif; font-size: 1em; }
+  details.hints h4 { color: #166534; margin-bottom: 4px; margin-top: 18px; font-family: -apple-system, sans-serif; }
+  details.hints p, details.hints ul { font-size: 0.92em; margin: 4px 0; }
+  @media print { body { background: #fff; } .container { box-shadow: none; padding: 20px; } .marks { background: transparent; } details.hints, .top-nav { display: none; } }
+  @media (max-width: 600px) { .container { padding: 16px 18px; } .exam-meta { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <nav class="top-nav">
+    <a href="index.html">📒 Notes</a>
+    <a href="sample_paper_1.html">📝 Paper 1</a>
+    <a class="active">📝 Paper 2</a>
+    <a href="sample_paper_3.html">📝 Paper 3</a>
+  </nav>
+
+  <div class="exam-header">
+    <h1>MARKETING MANAGEMENT — MINOR</h1>
+    <div class="subtitle">End-Semester Examination · Sample Paper 2</div>
+    <div class="subtitle">Academic Year 2025–2026, Semester 2</div>
+    <div class="exam-meta">
+      <div><strong>Date:</strong> Saturday, 23 May 2026</div>
+      <div><strong>Duration:</strong> 2 Hours</div>
+      <div><strong>Maximum Marks:</strong> 40</div>
+      <div><strong>Mode:</strong> Paper–Pen Based</div>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <h3>General Instructions</h3>
+    <ol>
+      <li>This paper has <strong>three sections — A, B and C</strong>. All sections are <strong>compulsory</strong>.</li>
+      <li><strong>Section A:</strong> 5 × 2 marks (short concept answers).</li>
+      <li><strong>Section B:</strong> 3 × 4 marks (application).</li>
+      <li><strong>Section C:</strong> 2 × 9 marks (case-based).</li>
+      <li>Carry two pens, colours, pencil, eraser, scale. <strong>No borrowing</strong> from peers.</li>
+      <li>Frameworks &amp; labelled diagrams are encouraged. Cite Indian/global examples.</li>
+    </ol>
+  </div>
+
+  <div class="marks-summary">
+    <table>
+      <tr><th>Section</th><th>Type</th><th>Questions</th><th>Marks each</th><th>Total</th></tr>
+      <tr><td>A</td><td>Concept</td><td>5</td><td>2</td><td>10</td></tr>
+      <tr><td>B</td><td>Application</td><td>3</td><td>4</td><td>12</td></tr>
+      <tr><td>C</td><td>Caselet</td><td>2</td><td>9</td><td>18</td></tr>
+      <tr><td colspan="4">GRAND TOTAL</td><td>40</td></tr>
+    </table>
+  </div>
+
+  <!-- ============== SECTION A ============== -->
+  <h2 class="section-heading">SECTION A — Concept Check (5 × 2 = 10 Marks)</h2>
+  <p class="section-note">Attempt <strong>all five</strong>. Crisp answers — 3 to 5 lines.</p>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q1.</span>
+    <span class="qtext">Explain the <strong>three Product Levels</strong> using a smartphone as your example. Which layer is the hardest for competitors to copy and why?</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q2.</span>
+    <span class="qtext">Differentiate between <strong>Micro</strong> and <strong>Macro</strong> environmental factors with one example each.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q3.</span>
+    <span class="qtext">In <strong>Assael's Buying Behavior Matrix</strong>, classify the following purchases and state the type:</span>
+    <ol class="qparts">
+      <li>Buying a flagship laptop for college</li>
+      <li>Buying a packet of salt</li>
+      <li>Trying a new flavor of chips</li>
+      <li>Buying car insurance</li>
+    </ol>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q4.</span>
+    <span class="qtext">Define <strong>Cart Abandonment</strong>. List any two common reasons for it and one effective recovery tactic.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q5.</span>
+    <span class="qtext">What is <strong>Customer Lifetime Value (CLV)</strong>? Write the formula and explain why a CLV : CAC ratio of 3:1 is considered healthy.</span>
+  </div>
+
+  <!-- ============== SECTION B ============== -->
+  <h2 class="section-heading">SECTION B — Application (3 × 4 = 12 Marks)</h2>
+  <p class="section-note">Use frameworks and Indian examples. ½ page each.</p>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q6.</span>
+    <span class="qtext">An EV startup is launching an <strong>affordable electric scooter for college students</strong> in Tier 1 and Tier 2 Indian cities.</span>
+    <ol class="qparts">
+      <li>Choose <strong>one pricing strategy</strong> (Penetration, Skimming, or Value-based) and justify in 3–4 lines. <em>(2 marks)</em></li>
+      <li>Recommend a suitable <strong>distribution intensity</strong> (Intensive / Selective / Exclusive) and explain why. <em>(2 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q7.</span>
+    <span class="qtext">"Promotions always increase sales." Critically examine this statement with reference to the <strong>short-term benefits vs long-term risks</strong> of sales promotions. Give one Indian example of a brand that has suffered from over-promotion.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q8.</span>
+    <span class="qtext">Map the following ad campaigns to the appropriate <strong>Advertising Objective</strong> (Inform / Persuade / Remind) AND the <strong>PLC stage</strong> they likely belong to. One line each.</span>
+    <ol class="qparts numbers">
+      <li>An LIC ad showing a family thanking their late father for taking out a policy</li>
+      <li>A first-time ad explaining how UPI works in 2016</li>
+      <li>A Coca-Cola "Open Happiness" festive ad</li>
+      <li>A Pepsi ad attacking Coke's taste in a blind test</li>
+    </ol>
+  </div>
+
+  <!-- ============== SECTION C ============== -->
+  <h2 class="section-heading">SECTION C — Case-Based Application (2 × 9 = 18 Marks)</h2>
+  <p class="section-note">Both compulsory. Structure with headings. ~1 page each.</p>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q9.</span>
+    <span class="qtext"><strong>Caselet 1 — The Beauty Brand at the Crossroads</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> "<em>GlowEdit</em>" is a 3-year-old Indian D2C skincare startup that started selling exclusively on its website and Instagram. It has 200,000 customers, average order value ₹850, and strong unit economics.<br><br>
+      To grow further, the founders are debating four options:
+      <ul style="margin: 8px 0 0 20px;">
+        <li><strong>A:</strong> Open 20 exclusive brand outlets in Tier-1 metros.</li>
+        <li><strong>B:</strong> List on Nykaa, Amazon, and Flipkart (modern + online retail).</li>
+        <li><strong>C:</strong> Launch a premium anti-ageing range priced 3x current SKUs.</li>
+        <li><strong>D:</strong> Expand into men's grooming under the same brand name.</li>
+      </ul>
+    </div>
+    <ol class="qparts">
+      <li>Place each of the four options (A, B, C, D) on the <strong>Ansoff Matrix</strong> with justification. Draw the matrix. <em>(4 marks)</em></li>
+      <li>Identify <strong>two channel-conflict risks</strong> that option B (listing on marketplaces) could create with the existing D2C website. <em>(2 marks)</em></li>
+      <li>If forced to choose only <strong>one</strong> option, which would you recommend and why? Tie your answer to <strong>STP</strong> and <strong>brand positioning</strong>. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="or-divider">OR</div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q9 (Alt).</span>
+    <span class="qtext"><strong>Caselet 1 (Alternative) — The Failed Launch</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> A leading FMCG company launches a "<em>healthy oats biscuit</em>" priced at ₹40 per pack (regular biscuits sell at ₹10–15). They advertise heavily on prime-time TV, place it on premium shelves in modern retail only, and use a young Bollywood actor as endorser.<br><br>
+      After 6 months: low repeat purchases, high returns from retailers, and the product is killed.
+    </div>
+    <ol class="qparts">
+      <li>Conduct a <strong>4Ps diagnosis</strong> of why this product failed. Identify the weakest P and at least two misalignments. <em>(4 marks)</em></li>
+      <li>Apply the <strong>"Crossing the Chasm"</strong> concept to this case — which adopter segment did they target and where might they have gone wrong? <em>(2 marks)</em></li>
+      <li>Suggest a <strong>relaunch strategy</strong> using a revised 4P mix. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q10.</span>
+    <span class="qtext"><strong>Caselet 2 — Reviving Loyalty at "MyGrocer"</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> "<em>MyGrocer</em>" is a regional online grocery platform competing with BigBasket and JioMart. They have 1.5 million customers, but:
+      <ul style="margin: 8px 0 0 20px;">
+        <li>Churn rate is 22% annually (industry average is 12%).</li>
+        <li>Their existing "MyPoints" program gives 1 point per ₹100 — but redemption rate is only 8%.</li>
+        <li>60% of their churned customers cite "lack of new content/offers" and "delivery delays".</li>
+        <li>CAC is ₹450 per customer; ARPU is ₹2,800/year; gross margin is 15%.</li>
+      </ul>
+    </div>
+    <ol class="qparts">
+      <li>Calculate the approximate <strong>CLV</strong> assuming an average customer stays 3 years. Comment on the CLV:CAC ratio. <em>(3 marks)</em></li>
+      <li>Diagnose <strong>three reasons</strong> why the current loyalty program is failing and recommend a <strong>redesigned loyalty program</strong> (specify type + earning + redemption + one personalisation feature). <em>(3 marks)</em></li>
+      <li>Design a brief <strong>IMC plan</strong> with at least three coordinated touchpoints (advertising, sales promotion, digital, PR — any 3) to reduce churn and re-engage customers. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="or-divider">OR</div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q10 (Alt).</span>
+    <span class="qtext"><strong>Caselet 2 (Alternative) — The MLM Controversy</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> "<em>VitaPlus</em>", a wellness MLM company operating in India, has grown from 5,000 distributors to 50,000 in two years. Recently, news channels have reported that 70% of distributors earn less than ₹2,000/month, and the top 1% earn over 80% of total commissions.<br><br>
+      Existing distributors are encouraged primarily to recruit new distributors. The product is a multivitamin sold for ₹2,500/bottle, while competitor products are available at ₹400.
+    </div>
+    <ol class="qparts">
+      <li>Evaluate whether VitaPlus is operating closer to a <strong>legitimate MLM</strong> or a <strong>pyramid scheme</strong>. Cite at least three specific points from the case. <em>(3 marks)</em></li>
+      <li>Discuss the <strong>ethical concerns</strong> in this scenario from a marketing perspective. Reference India's Direct Selling Rules. <em>(3 marks)</em></li>
+      <li>If VitaPlus genuinely believes in its product, recommend an <strong>alternative go-to-market strategy</strong> (other than MLM) that they could pivot to. Justify with 4Ps. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="footer-note">
+    — End of Sample Paper 2 —<br>
+    "Marketing is not about selling products. It's about managing customer experience."
+  </div>
+
+  <details class="hints">
+    <summary>📘 Click for Suggested Answer Skeletons (Paper 2)</summary>
+
+    <h4>Section A</h4>
+    <p><strong>Q1.</strong> Core (communication), Actual (phone/camera/OS), Augmented (warranty, EMI, app store). Augmented is hardest to copy — it's an ecosystem, services, brand promise.</p>
+    <p><strong>Q2.</strong> Micro = close, somewhat controllable (suppliers, customers, retailers). Macro = broad, uncontrollable (PESTEL factors).</p>
+    <p><strong>Q3.</strong> Laptop = Complex Buying · Salt = Habitual · Chips = Variety-Seeking · Insurance = Dissonance-Reducing.</p>
+    <p><strong>Q4.</strong> Cart abandonment = customers add to cart but don't complete checkout. Reasons: unexpected costs, complicated checkout, security concerns. Recovery: email retargeting (10–15%), scarcity/urgency triggers.</p>
+    <p><strong>Q5.</strong> CLV = AOV × Purchase Frequency × Customer Lifespan. 3:1 ratio means each ₹1 of acquisition produces ₹3 of lifetime value — healthy margin for sustainable growth.</p>
+
+    <h4>Section B</h4>
+    <p><strong>Q6.</strong> (a) Penetration pricing — price-sensitive student segment, need to build share fast, scale economies later. (b) Selective distribution via dealerships in college towns + online channel — students are concentrated, no need for intensive coverage.</p>
+    <p><strong>Q7.</strong> Promotions create short-term sales spike but cause deal addiction, brand dilution, reduced willingness to pay full price. Example: fashion e-commerce brands always on 70% sale → customers wait for sales, full-price sales drop. Heavy discounting devalues brand equity.</p>
+    <p><strong>Q8.</strong> LIC = Remind (Maturity) · UPI 2016 = Inform (Introduction) · Coke festive = Remind (Maturity) · Pepsi vs Coke = Persuade (Growth/Maturity competitive).</p>
+
+    <h4>Section C — Caselet Skeletons</h4>
+    <p><strong>Q9 (GlowEdit):</strong>
+      <ul>
+        <li>Ansoff — A: Market Penetration (same products, same market, new channel). B: Market Penetration (existing products, wider reach, same target). C: Product Development (new range, same target). D: Diversification (new market segment + new positioning for men).</li>
+        <li>Channel conflict risks of B — Price undercutting (Nykaa flash sales hurt D2C), brand dilution (placement next to mass brands), loss of customer data (marketplace owns the relationship).</li>
+        <li>Recommended: B (modern retail listing) — fastest growth without diluting brand if executed with channel-specific SKUs and consistent MRPs. Aligns with STP (mass-affordable skincare for young women in metros).</li>
+      </ul>
+    </p>
+    <p><strong>Q9 (Alt — Healthy Biscuit):</strong> Weakest P = Price (3–4x normal biscuits without proven value perception). Misalignments: premium retail-only Place excludes mass biscuit buyers; TV ads have broad reach but Place doesn't match. Crossing the Chasm — targeted mainstream (Early Majority) before winning Early Adopters of health food. Relaunch: re-position as "premium snacking" at ₹25, distribute in modern + kirana, partner with fitness influencers.</p>
+    <p><strong>Q10 (MyGrocer):</strong>
+      <ul>
+        <li>CLV ≈ ₹2,800 × 15% × 3 = ₹1,260. CLV:CAC ratio = 1,260 : 450 ≈ 2.8 : 1 — borderline; needs improvement.</li>
+        <li>Loyalty failures: (1) Earning too slow — 1 point per ₹100 is not motivating. (2) Redemption barriers (low 8% rate). (3) No personalisation. Redesign: Tiered (Silver/Gold/Platinum) + free delivery for higher tiers + personalised offers based on past purchases (e.g., milk-buyers get dairy-subscription discount).</li>
+        <li>IMC: WhatsApp personalised offer + paid Instagram retargeting + in-app "Welcome Back" offer + email — all carrying the same "Your favourites at the prices you love" message.</li>
+      </ul>
+    </p>
+    <p><strong>Q10 (Alt — VitaPlus):</strong>
+      <ul>
+        <li>Closer to pyramid — recruitment dominates compensation, earnings concentrated at top, product priced 6x competitors (suggests product is token), most distributors lose money.</li>
+        <li>Ethical issues: misleading income claims, exploiting social relationships, overpriced product. India's Direct Selling Rules (2016/Consumer Protection 2021) require: genuine sales, buy-back guarantee, no money circulation, disclosure of realistic earnings.</li>
+        <li>Pivot to D2C + retail: Product (re-formulate at competitive price), Price (₹500–800 vs current ₹2,500), Place (Amazon + chemists + own website), Promotion (digital + influencer marketing, transparent claims).</li>
+      </ul>
+    </p>
+
+    <h4>Marking Notes</h4>
+    <ul>
+      <li>Calculations (CLV, ratios) must show working = full marks.</li>
+      <li>Frameworks must be drawn AND labelled.</li>
+      <li>Critical evaluation (not just listing) earns top marks in Section C.</li>
+    </ul>
+  </details>
+
+</div>
+
+</body>
+</html>

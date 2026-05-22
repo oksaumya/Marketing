@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Management Minor — Sample Paper 3</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: "Georgia", "Times New Roman", serif; line-height: 1.65; color: #1f2937; background: #f5f5f0; margin: 0; padding: 0; }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 40px 60px; background: #fff; box-shadow: 0 0 30px rgba(0,0,0,0.08); min-height: 100vh; }
+  .top-nav { background: #1e3a8a; color:#fff; padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-family: -apple-system, sans-serif; font-size: 0.9em; display:flex; gap: 16px; flex-wrap:wrap; }
+  .top-nav a { color: #fff; text-decoration: none; opacity: 0.9; }
+  .top-nav a:hover { opacity: 1; text-decoration: underline; }
+  .top-nav .active { font-weight: 700; opacity: 1; border-bottom: 2px solid #fbbf24; }
+  .exam-header { text-align: center; border-bottom: 3px double #1e3a8a; padding-bottom: 18px; margin-bottom: 24px; }
+  .exam-header h1 { margin: 0 0 4px; font-size: 1.55em; color: #1e3a8a; letter-spacing: 0.5px; }
+  .exam-header .subtitle { font-size: 0.95em; color: #4b5563; margin: 2px 0; }
+  .exam-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; margin-top: 16px; font-size: 0.95em; }
+  .exam-meta div { border-bottom: 1px dotted #94a3b8; padding-bottom: 4px; }
+  .exam-meta strong { color: #1e3a8a; }
+  .instructions { background: #fffbeb; border: 2px solid #ca8a04; border-radius: 6px; padding: 14px 20px; margin: 20px 0 30px; font-size: 0.93em; }
+  .instructions h3 { margin-top: 0; color: #a16207; font-size: 1em; font-family: -apple-system, sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+  .instructions ol { margin: 6px 0 0 18px; padding: 0; }
+  .instructions li { margin: 3px 0; }
+  h2.section-heading { background: #1e3a8a; color: #fff; padding: 10px 20px; border-radius: 4px; margin-top: 36px; margin-bottom: 6px; font-size: 1.15em; font-family: -apple-system, sans-serif; letter-spacing: 0.5px; }
+  .section-note { font-style: italic; color: #475569; margin: 0 0 18px; font-size: 0.92em; padding-left: 4px; }
+  .question { margin: 16px 0 22px; padding: 8px 0 0; }
+  .qnum { font-weight: 700; color: #1e3a8a; margin-right: 6px; }
+  .marks { float: right; font-weight: 700; color: #b91c1c; font-family: -apple-system, sans-serif; font-size: 0.92em; background: #fef2f2; padding: 2px 10px; border-radius: 10px; }
+  .qtext { display: block; }
+  .qparts { margin: 8px 0 0 28px; padding: 0; list-style: lower-alpha; }
+  .qparts li { margin: 6px 0; }
+  .qparts.numbers { list-style: lower-roman; }
+  .caselet { background: #f1f5f9; border-left: 4px solid #2563eb; padding: 14px 20px; margin: 10px 0 14px; border-radius: 0 6px 6px 0; font-size: 0.95em; font-style: italic; color: #1e293b; }
+  .caselet strong { color: #1e3a8a; font-style: normal; }
+  .or-divider { text-align: center; margin: 16px 0; font-weight: 700; color: #b91c1c; font-family: -apple-system, sans-serif; letter-spacing: 2px; }
+  .or-divider::before, .or-divider::after { content: "—"; margin: 0 14px; color: #cbd5e1; }
+  .footer-note { margin-top: 50px; padding-top: 14px; border-top: 2px solid #cbd5e1; text-align: center; font-style: italic; color: #6b7280; font-size: 0.9em; }
+  .marks-summary { background: #eff6ff; border: 1px solid #93c5fd; border-radius: 6px; padding: 10px 18px; margin: 14px 0 24px; font-size: 0.92em; }
+  .marks-summary table { width: 100%; border-collapse: collapse; margin: 6px 0 0; }
+  .marks-summary td, .marks-summary th { padding: 5px 8px; border-bottom: 1px dotted #cbd5e1; text-align: left; font-family: -apple-system, sans-serif; }
+  .marks-summary th { color: #1e3a8a; }
+  .marks-summary tr:last-child td { border-bottom: none; font-weight: 700; }
+  details.hints { margin-top: 50px; background: #f0fdf4; border: 2px dashed #16a34a; padding: 16px 22px; border-radius: 8px; }
+  details.hints summary { cursor: pointer; font-weight: 700; color: #15803d; font-family: -apple-system, sans-serif; font-size: 1em; }
+  details.hints h4 { color: #166534; margin-bottom: 4px; margin-top: 18px; font-family: -apple-system, sans-serif; }
+  details.hints p, details.hints ul { font-size: 0.92em; margin: 4px 0; }
+  @media print { body { background: #fff; } .container { box-shadow: none; padding: 20px; } .marks { background: transparent; } details.hints, .top-nav { display: none; } }
+  @media (max-width: 600px) { .container { padding: 16px 18px; } .exam-meta { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <nav class="top-nav">
+    <a href="index.html">📒 Notes</a>
+    <a href="sample_paper_1.html">📝 Paper 1</a>
+    <a href="sample_paper_2.html">📝 Paper 2</a>
+    <a class="active">📝 Paper 3</a>
+  </nav>
+
+  <div class="exam-header">
+    <h1>MARKETING MANAGEMENT — MINOR</h1>
+    <div class="subtitle">End-Semester Examination · Sample Paper 3</div>
+    <div class="subtitle">Academic Year 2025–2026, Semester 2</div>
+    <div class="exam-meta">
+      <div><strong>Date:</strong> Saturday, 23 May 2026</div>
+      <div><strong>Duration:</strong> 2 Hours</div>
+      <div><strong>Maximum Marks:</strong> 40</div>
+      <div><strong>Mode:</strong> Paper–Pen Based</div>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <h3>General Instructions</h3>
+    <ol>
+      <li>Three sections — A, B, C. All compulsory.</li>
+      <li>Section A: 5×2. Section B: 3×4. Section C: 2×9.</li>
+      <li>Bring two pens, colours, pencil, eraser, scale. <strong>No borrowing</strong>.</li>
+      <li>Use frameworks, labelled diagrams, real examples (Indian preferred).</li>
+    </ol>
+  </div>
+
+  <div class="marks-summary">
+    <table>
+      <tr><th>Section</th><th>Type</th><th>Questions</th><th>Marks each</th><th>Total</th></tr>
+      <tr><td>A</td><td>Concept</td><td>5</td><td>2</td><td>10</td></tr>
+      <tr><td>B</td><td>Application</td><td>3</td><td>4</td><td>12</td></tr>
+      <tr><td>C</td><td>Caselet</td><td>2</td><td>9</td><td>18</td></tr>
+      <tr><td colspan="4">GRAND TOTAL</td><td>40</td></tr>
+    </table>
+  </div>
+
+  <!-- ============== SECTION A ============== -->
+  <h2 class="section-heading">SECTION A — Concept Check (5 × 2 = 10 Marks)</h2>
+  <p class="section-note">Attempt <strong>all five</strong>.</p>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q1.</span>
+    <span class="qtext">Define <strong>Value</strong> in marketing. Write the equation and explain why "same price ≠ same value" using an example.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q2.</span>
+    <span class="qtext">Differentiate between <strong>Primary</strong> and <strong>Secondary</strong> market research with one example each. Also state the difference between <strong>Qualitative</strong> and <strong>Quantitative</strong> research.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q3.</span>
+    <span class="qtext">List the <strong>5 stages of the Consumer Decision-Making Process</strong>. In which stage is "discounting" most influential, and in which stage is "social media" most influential?</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q4.</span>
+    <span class="qtext">What is <strong>IMC</strong>? Explain why a brand that "sounds premium on Instagram but cheap on Amazon" breaks IMC.</span>
+  </div>
+
+  <div class="question">
+    <span class="marks">[2 Marks]</span>
+    <span class="qnum">Q5.</span>
+    <span class="qtext">Explain the difference between an <strong>MLM</strong> and a <strong>Pyramid Scheme</strong> using any three criteria that regulators use.</span>
+  </div>
+
+  <!-- ============== SECTION B ============== -->
+  <h2 class="section-heading">SECTION B — Application (3 × 4 = 12 Marks)</h2>
+  <p class="section-note">Application + framework + example.</p>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q6.</span>
+    <span class="qtext">For each pair below, choose the more appropriate <strong>distribution intensity</strong> (Intensive / Selective / Exclusive) and justify in 1–2 lines:</span>
+    <ol class="qparts">
+      <li>Lifebuoy soap vs Rolex watch</li>
+      <li>Premium organic skincare vs Frooti</li>
+      <li>Smartphone (mass market) vs Limited-edition sneakers</li>
+      <li>Designer Saree vs Atta (wheat flour)</li>
+    </ol>
+  </div>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q7.</span>
+    <span class="qtext">A premium luxury watch brand is launching in India. Recommend the most appropriate <strong>media mix</strong> from the options below, and discuss the <strong>Reach × Frequency × Impact</strong> trade-off you have considered:</span>
+    <ol class="qparts">
+      <li>IPL TV ads</li>
+      <li>Instagram + YouTube influencer ads</li>
+      <li>Airport outdoor + luxury magazines</li>
+      <li>Google search ads</li>
+    </ol>
+  </div>
+
+  <div class="question">
+    <span class="marks">[4 Marks]</span>
+    <span class="qnum">Q8.</span>
+    <span class="qtext">"<strong>Marketing creates desire; B2B marketing reduces risk.</strong>" Explain this statement by contrasting B2C and B2B marketing on at least <strong>four dimensions</strong>. Use a tabular format.</span>
+  </div>
+
+  <!-- ============== SECTION C ============== -->
+  <h2 class="section-heading">SECTION C — Case-Based Application (2 × 9 = 18 Marks)</h2>
+  <p class="section-note">Both compulsory. Use frameworks. ~1 page each.</p>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q9.</span>
+    <span class="qtext"><strong>Caselet 1 — Sharmaji ke Samose Goes National</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> "<em>Sharmaji ke Samose</em>" is a 30-year-old family-owned snack shop in Old Delhi famous for its samosas (₹15 each). Daily footfall: 600 customers. The third-generation owner, Rohan Sharma (MBA grad), wants to take the brand national.<br><br>
+      Options he is considering:
+      <ul style="margin: 8px 0 0 20px;">
+        <li>Open 50 outlets in 10 cities (franchise model)</li>
+        <li>Sell packaged frozen samosas through BigBasket, Amazon Fresh, Blinkit</li>
+        <li>Partner with Swiggy + Zomato for hyperlocal delivery from existing shop</li>
+      </ul>
+      Constraint: He wants to keep the <em>"taste of Old Delhi"</em> intact as the core promise.
+    </div>
+    <ol class="qparts">
+      <li>Conduct a <strong>PESTEL analysis</strong> highlighting at least <strong>three macro factors</strong> that will impact this national expansion. <em>(3 marks)</em></li>
+      <li>Conduct a <strong>SWOT analysis</strong> for Sharmaji ke Samose given the above context. <em>(3 marks)</em></li>
+      <li>Which of the three options should Rohan choose to <strong>preserve the brand promise</strong> while scaling? Justify with reference to <strong>positioning</strong> and <strong>variability/inseparability</strong> challenges of services. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="or-divider">OR</div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q9 (Alt).</span>
+    <span class="qtext"><strong>Caselet 1 (Alternative) — The Aspirational Sedan</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> An Indian carmaker plans to launch a new compact sedan priced between Maruti's mid-range and Hyundai's premium models. The target customer is the "<em>upgrader</em>" — a 30–40 year old urban professional moving up from a hatchback to a sedan. The brand has had mixed brand perception (more value than aspirational).
+    </div>
+    <ol class="qparts">
+      <li>Develop the <strong>STP for this sedan</strong>. Be specific about segmentation bases, target description, and positioning statement. <em>(4 marks)</em></li>
+      <li>Construct a <strong>positioning map</strong> with Price (Affordable ↔ Premium) on one axis and Brand Perception (Functional ↔ Aspirational) on the other. Plot at least 5 competitor brands and the new sedan. Draw &amp; label. <em>(3 marks)</em></li>
+      <li>Recommend <strong>one promotion strategy</strong> (message + media + sales promotion) for the launch phase. <em>(2 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q10.</span>
+    <span class="qtext"><strong>Caselet 2 — The Big Billion Days Hangover</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> A mid-tier Indian electronics brand "<em>Voltis</em>" depends heavily on Flipkart Big Billion Days and Amazon Great Indian Sale for 65% of its annual revenue. During sale events they offer 35–50% discounts. Other 9 months: sales are slow.<br><br>
+      Findings from a customer survey:
+      <ul style="margin: 8px 0 0 20px;">
+        <li>72% customers admit they "wait for sales" before buying Voltis.</li>
+        <li>NPS during full-price months is +12; during sale months it is +45.</li>
+        <li>Repeat purchase rate is only 18%.</li>
+        <li>Their competitor "Boltora" runs <em>only one</em> sale per year and grew 40% YoY.</li>
+      </ul>
+    </div>
+    <ol class="qparts">
+      <li>Diagnose what is happening to Voltis using the <strong>short-term vs long-term risks of sales promotion</strong> framework. <em>(3 marks)</em></li>
+      <li>Should Voltis cut down its sales-event participation? Build the <strong>pros and cons</strong> and give a recommendation. <em>(3 marks)</em></li>
+      <li>Design a <strong>brand-building campaign</strong> (using IMC principles) that helps Voltis transition from a "discount brand" to a "value brand". Include at least three touchpoints. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="or-divider">OR</div>
+
+  <div class="question">
+    <span class="marks">[9 Marks]</span>
+    <span class="qnum">Q10 (Alt).</span>
+    <span class="qtext"><strong>Caselet 2 (Alternative) — The Loyalty Trap</strong></span>
+    <div class="caselet">
+      <strong>Context:</strong> "<em>FlyAway Airlines</em>" runs a tiered frequent-flyer program (Silver, Gold, Platinum) like the Taj InnerCircle. Recently a customer survey revealed:
+      <ul style="margin: 8px 0 0 20px;">
+        <li>Platinum members fly 2x more than Silver but receive 5x more perks.</li>
+        <li>Silver-tier members feel "ignored" and 35% have shifted to competitors.</li>
+        <li>Acquiring a Platinum customer costs ₹15,000 in marketing; Silver costs ₹2,000.</li>
+        <li>Platinum CLV is ₹3,80,000 over 5 years; Silver CLV is ₹35,000 over 2 years.</li>
+      </ul>
+    </div>
+    <ol class="qparts">
+      <li>Calculate the <strong>CLV : CAC ratio</strong> for each tier and discuss which tier is more profitable. <em>(3 marks)</em></li>
+      <li>Identify <strong>two flaws</strong> in FlyAway's current loyalty program design and explain how they violate the principle that "loyalty programs should make every customer feel valued". <em>(3 marks)</em></li>
+      <li>Redesign the program with <strong>two specific changes</strong> aimed at retaining Silver members without dilating Platinum benefits. Specify earning rules and one personalisation feature. <em>(3 marks)</em></li>
+    </ol>
+  </div>
+
+  <div class="footer-note">
+    — End of Sample Paper 3 —<br>
+    "Strategy → Execution → Scale → Sustain. The integrated marketing system."
+  </div>
+
+  <details class="hints">
+    <summary>📘 Click for Suggested Answer Skeletons (Paper 3)</summary>
+
+    <h4>Section A</h4>
+    <p><strong>Q1.</strong> Value = Benefits − Cost. Two students buy the same ₹399 pizza — one is hungry &amp; gets hot pizza on time (high value), the other isn't hungry &amp; gets cold late delivery (low value). Same price, different value because value is perceived.</p>
+    <p><strong>Q2.</strong> Primary = collected firsthand (Zomato survey before Zomato Gold). Secondary = pre-existing data (Swiggy used FSSAI reports). Qualitative = motivations/feelings (focus groups). Quantitative = measurement (surveys, dashboards).</p>
+    <p><strong>Q3.</strong> Need Recognition → Information Search → Evaluation of Alternatives → Purchase Decision → Post-Purchase. Discounts most influence Purchase Decision. Social media most influences Information Search &amp; Evaluation.</p>
+    <p><strong>Q4.</strong> IMC = coordinating all communication tools so the brand speaks with one voice. Premium-on-Instagram + cheap-on-Amazon breaks trust — customers feel either deceived or confused about real positioning; brand equity drops.</p>
+    <p><strong>Q5.</strong> Three criteria: (1) Is real inventory sold? (2) Are commissions tied to product sales? (3) Is recruitment dominating compensation? MLM = yes/yes/no. Pyramid = no/no/yes.</p>
+
+    <h4>Section B</h4>
+    <p><strong>Q6.</strong> Lifebuoy = Intensive (mass FMCG), Rolex = Exclusive. Premium organic skincare = Selective, Frooti = Intensive. Mass smartphone = Intensive (with selective retail tie-ups), Limited sneakers = Exclusive. Designer Saree = Exclusive, Atta = Intensive.</p>
+    <p><strong>Q7.</strong> Best mix = Airport outdoor + luxury magazines. Reasoning: lower reach but higher <em>impact</em> and ideal <em>context</em> (target audience is wealthy travellers/readers). Mass YouTube/IPL would dilute brand. Google search may help intent but lacks aspirational framing.</p>
+    <p><strong>Q8.</strong> Tabular: Decision speed (B2C fast / B2B slow), Decision maker (one / many), Driver (emotion / rational ROI), Marketing focus (desire / risk reduction), Cycle length (short / long), Channels used (mass / personal selling). Examples: pizza (B2C) vs ERP software (B2B).</p>
+
+    <h4>Section C — Caselet Skeletons</h4>
+    <p><strong>Q9 (Sharmaji ke Samose):</strong>
+      <ul>
+        <li>PESTEL: Economic (rising disposable income), Social (snacking culture + nostalgia for "authentic" street food), Tech (food delivery apps, frozen tech), Legal (FSSAI compliance), Environmental (packaging waste from frozen).</li>
+        <li>SWOT — S: brand heritage, distinctive taste, loyal Old Delhi base. W: variability (every shop will taste different), small team, no scale experience. O: pan-India samosa demand, frozen food growth. T: hygiene issues at franchise level, brand dilution, competition from PaperBoat/Haldiram.</li>
+        <li>Recommend: Option 3 (Swiggy/Zomato hyperlocal) FIRST to validate, then frozen via BigBasket (Option 2). Avoid franchises in Option 1 — service variability would destroy the "taste of Old Delhi" promise. Aligns with services' inseparability/variability challenges.</li>
+      </ul>
+    </p>
+    <p><strong>Q9 (Alt — Sedan):</strong>
+      <ul>
+        <li>STP — Segmentation: Demographic (30–40 yrs, ₹15–25L income), Psychographic (status-conscious upgraders), Geographic (Tier-1 metros). Target: urban professional with first sedan purchase. Positioning: "For young professionals upgrading from hatchbacks, our sedan offers Premium features at a smart-buyer's price."</li>
+        <li>Positioning Map: X = Affordable→Premium, Y = Functional→Aspirational. Maruti = bottom-left, Hyundai = mid-right, Honda = upper-right, Tata = mid-left, BMW = top-right. New sedan = mid-centre (better-than-Maruti, less-than-Honda).</li>
+        <li>Promotion: Message = "Built for the Upgrader". Media = Digital + select print (Auto Today) + experiential test-drives at malls. Sales promo = "Trade-in your hatchback" offer.</li>
+      </ul>
+    </p>
+    <p><strong>Q10 (Voltis):</strong>
+      <ul>
+        <li>Classic over-promotion trap — short-term spike at the cost of long-term brand equity. Customers anchored to discounted prices, weakening willingness to pay. Boltora's contrarian approach preserved brand value.</li>
+        <li>Yes, cut down to 1–2 sales/year. Pros: rebuilds full-price perception, healthier margins, higher loyalty. Cons: short-term revenue drop, possible market share loss. Mitigation: gradual reduction over 12 months + brand campaign.</li>
+        <li>IMC plan: TV ad showcasing product craftsmanship + Influencer reviews emphasising quality not price + Owned content (YouTube product stories) + PR coverage in tech magazines + targeted retention emails to existing customers. Consistent message: "Worth full price".</li>
+      </ul>
+    </p>
+    <p><strong>Q10 (Alt — FlyAway):</strong>
+      <ul>
+        <li>CLV:CAC — Platinum = 3,80,000 ÷ 15,000 ≈ 25:1. Silver = 35,000 ÷ 2,000 = 17.5:1. Both are healthy, but Silver has HIGH RATIO with low absolute CLV — volume matters. Cannot ignore the Silver base.</li>
+        <li>Flaws: (1) Reward concentration at top creates "second-class" feel for Silver. (2) No clear path/progression visible to Silver (which would motivate upgrading rather than churning).</li>
+        <li>Redesign: (1) Introduce "next-tier preview" — give Silver members 1 free perk per quarter normally available to Gold to motivate aspiration. (2) Personalised offers (birthday miles, route-based suggestions). Earning rule: 1 mile per ₹1 spent + 2x miles for repeat routes. AI-driven offer personalisation based on travel patterns.</li>
+      </ul>
+    </p>
+
+    <h4>Marking Notes</h4>
+    <ul>
+      <li>Tables and labelled diagrams &gt; lengthy prose for examiners.</li>
+      <li>Always tie answers back to <strong>core frameworks</strong> taught in class.</li>
+      <li>Quantitative calculations need shown working.</li>
+      <li>Last but most important: <strong>structure</strong>. Use sub-headings even in Section C.</li>
+    </ul>
+  </details>
+
+</div>
+
+</body>
+</html>
